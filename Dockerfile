@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ENV XO_VERSION "v4.6.0"
+ENV XO_VERSION "v4.6.1"
 ENV DEBIAN_FRONTEND noninteractive
 
 #
