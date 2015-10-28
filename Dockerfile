@@ -27,8 +27,8 @@ RUN curl -o /usr/local/bin/n https://raw.githubusercontent.com/visionmedia/n/mas
         chmod +x /usr/local/bin/n && n stable
 
 # Clone code
-RUN git clone -b $XO_VERSION --depth=1 http://github.com/vatesfr/xo-server && \
-    git clone -b $XO_VERSION --depth=1 http://github.com/vatesfr/xo-web && \
+RUN git clone -b $XO_SERVER_VERSION --depth=1 http://github.com/vatesfr/xo-server && \
+    git clone -b $XO_WEB_VERSION --depth=1 http://github.com/vatesfr/xo-web && \
     rm -rf xo-server/.git xo-web/.git xo-server/sample.config.yaml
 
 # Build XO
